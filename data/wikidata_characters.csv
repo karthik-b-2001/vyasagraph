@@ -1,0 +1,261 @@
+char,charLabel,father,fatherLabel,mother,motherLabel,spouse,spouseLabel
+http://www.wikidata.org/entity/Q42891,Krishna,http://www.wikidata.org/entity/Q890382,Vasudeva,http://www.wikidata.org/entity/Q379581,Devakī,http://www.wikidata.org/entity/Q113904,Rādhā
+http://www.wikidata.org/entity/Q42891,Krishna,http://www.wikidata.org/entity/Q890382,Vasudeva,http://www.wikidata.org/entity/Q379581,Devakī,http://www.wikidata.org/entity/Q1585773,Rukmiṇī
+http://www.wikidata.org/entity/Q42891,Krishna,http://www.wikidata.org/entity/Q890382,Vasudeva,http://www.wikidata.org/entity/Q379581,Devakī,http://www.wikidata.org/entity/Q2668668,Satyabhāmā
+http://www.wikidata.org/entity/Q42891,Krishna,http://www.wikidata.org/entity/Q890382,Vasudeva,http://www.wikidata.org/entity/Q379581,Devakī,http://www.wikidata.org/entity/Q3351664,Jāmbavatī
+http://www.wikidata.org/entity/Q42891,Krishna,http://www.wikidata.org/entity/Q890382,Vasudeva,http://www.wikidata.org/entity/Q379581,Devakī,http://www.wikidata.org/entity/Q4253412,Lalita
+http://www.wikidata.org/entity/Q42891,Krishna,http://www.wikidata.org/entity/Q890382,Vasudeva,http://www.wikidata.org/entity/Q379581,Devakī,http://www.wikidata.org/entity/Q14589610,Bhadra
+http://www.wikidata.org/entity/Q42891,Krishna,http://www.wikidata.org/entity/Q890382,Vasudeva,http://www.wikidata.org/entity/Q379581,Devakī,http://www.wikidata.org/entity/Q14589858,Lakshmana
+http://www.wikidata.org/entity/Q42891,Krishna,http://www.wikidata.org/entity/Q890382,Vasudeva,http://www.wikidata.org/entity/Q379581,Devakī,http://www.wikidata.org/entity/Q14589966,Mitravinda
+http://www.wikidata.org/entity/Q42891,Krishna,http://www.wikidata.org/entity/Q890382,Vasudeva,http://www.wikidata.org/entity/Q379581,Devakī,http://www.wikidata.org/entity/Q14590081,Nagnajiti
+http://www.wikidata.org/entity/Q42891,Krishna,http://www.wikidata.org/entity/Q890382,Vasudeva,http://www.wikidata.org/entity/Q379581,Devakī,http://www.wikidata.org/entity/Q14590114,Rohini
+http://www.wikidata.org/entity/Q42891,Krishna,http://www.wikidata.org/entity/Q890382,Vasudeva,http://www.wikidata.org/entity/Q379581,Devakī,http://www.wikidata.org/entity/Q32133357,Kalindi
+http://www.wikidata.org/entity/Q185790,Arjuna,http://www.wikidata.org/entity/Q128335,Indra,http://www.wikidata.org/entity/Q844424,Kuntī,http://www.wikidata.org/entity/Q1057886,Draupadī
+http://www.wikidata.org/entity/Q185790,Arjuna,http://www.wikidata.org/entity/Q857071,Pāṇḍu,http://www.wikidata.org/entity/Q844424,Kuntī,http://www.wikidata.org/entity/Q1057886,Draupadī
+http://www.wikidata.org/entity/Q185790,Arjuna,http://www.wikidata.org/entity/Q128335,Indra,http://www.wikidata.org/entity/Q844424,Kuntī,http://www.wikidata.org/entity/Q1982348,Subhadrā
+http://www.wikidata.org/entity/Q185790,Arjuna,http://www.wikidata.org/entity/Q857071,Pāṇḍu,http://www.wikidata.org/entity/Q844424,Kuntī,http://www.wikidata.org/entity/Q1982348,Subhadrā
+http://www.wikidata.org/entity/Q185790,Arjuna,http://www.wikidata.org/entity/Q128335,Indra,http://www.wikidata.org/entity/Q844424,Kuntī,http://www.wikidata.org/entity/Q2367305,Chitrangada
+http://www.wikidata.org/entity/Q185790,Arjuna,http://www.wikidata.org/entity/Q857071,Pāṇḍu,http://www.wikidata.org/entity/Q844424,Kuntī,http://www.wikidata.org/entity/Q2367305,Chitrangada
+http://www.wikidata.org/entity/Q185790,Arjuna,http://www.wikidata.org/entity/Q128335,Indra,http://www.wikidata.org/entity/Q844424,Kuntī,http://www.wikidata.org/entity/Q2723089,Ulūpī
+http://www.wikidata.org/entity/Q185790,Arjuna,http://www.wikidata.org/entity/Q857071,Pāṇḍu,http://www.wikidata.org/entity/Q844424,Kuntī,http://www.wikidata.org/entity/Q2723089,Ulūpī
+http://www.wikidata.org/entity/Q236221,Pāṇḍava,http://www.wikidata.org/entity/Q857071,Pāṇḍu,,,,
+http://www.wikidata.org/entity/Q249381,Mārkaṇḍeya,,,,,,
+http://www.wikidata.org/entity/Q320606,Abhimanyu,http://www.wikidata.org/entity/Q185790,Arjuna,http://www.wikidata.org/entity/Q1982348,Subhadrā,http://www.wikidata.org/entity/Q2389445,Uttarā
+http://www.wikidata.org/entity/Q379581,Devakī,,,,,http://www.wikidata.org/entity/Q890382,Vasudeva
+http://www.wikidata.org/entity/Q384956,Duṣyanta,,,,,http://www.wikidata.org/entity/Q955123,Śakuntalā
+http://www.wikidata.org/entity/Q580113,Gangā,,,,,http://www.wikidata.org/entity/Q1973947,Śāntanu
+http://www.wikidata.org/entity/Q616654,Janamejaya,http://www.wikidata.org/entity/Q2046277,Parīkṣit,,,,
+http://www.wikidata.org/entity/Q721272,Lanka,,,,,,
+http://www.wikidata.org/entity/Q757727,Atri,http://www.wikidata.org/entity/Q11389,God Brahma,,,http://www.wikidata.org/entity/Q2479214,Anasuya
+http://www.wikidata.org/entity/Q797498,Vritra,,,,,,
+http://www.wikidata.org/entity/Q844424,Kuntī,http://www.wikidata.org/entity/Q4211174,Shurasena,,,http://www.wikidata.org/entity/Q857071,Pāṇḍu
+http://www.wikidata.org/entity/Q857071,Pāṇḍu,http://www.wikidata.org/entity/Q330521,Vyāsa,http://www.wikidata.org/entity/Q1994807,Ambalika,http://www.wikidata.org/entity/Q844424,Kuntī
+http://www.wikidata.org/entity/Q857071,Pāṇḍu,http://www.wikidata.org/entity/Q330521,Vyāsa,http://www.wikidata.org/entity/Q1994807,Ambalika,http://www.wikidata.org/entity/Q1770690,Mādrī
+http://www.wikidata.org/entity/Q890382,Vasudeva,,,,,http://www.wikidata.org/entity/Q379581,Devakī
+http://www.wikidata.org/entity/Q890529,Droṇa,http://www.wikidata.org/entity/Q690753,Bharadwaja,,,http://www.wikidata.org/entity/Q106948922,Kripi
+http://www.wikidata.org/entity/Q926150,Dhṛtarāṣṭra,http://www.wikidata.org/entity/Q330521,Vyāsa,http://www.wikidata.org/entity/Q2044636,Ambika,http://www.wikidata.org/entity/Q1849082,Gāndhārī
+http://www.wikidata.org/entity/Q955123,Śakuntalā,http://www.wikidata.org/entity/Q2773345,Viśvāmitra,http://www.wikidata.org/entity/Q2367292,Menakā,http://www.wikidata.org/entity/Q384956,Duṣyanta
+http://www.wikidata.org/entity/Q983067,Yudhiṣṭhira,http://www.wikidata.org/entity/Q857071,Pāṇḍu,http://www.wikidata.org/entity/Q844424,Kuntī,http://www.wikidata.org/entity/Q1057886,Draupadī
+http://www.wikidata.org/entity/Q983067,Yudhiṣṭhira,http://www.wikidata.org/entity/Q857071,Pāṇḍu,http://www.wikidata.org/entity/Q844424,Kuntī,http://www.wikidata.org/entity/Q65050457,Devika
+http://www.wikidata.org/entity/Q1057886,Draupadī,http://www.wikidata.org/entity/Q2389430,Drupada,,,http://www.wikidata.org/entity/Q185790,Arjuna
+http://www.wikidata.org/entity/Q1057886,Draupadī,http://www.wikidata.org/entity/Q2389430,Drupada,,,http://www.wikidata.org/entity/Q983067,Yudhiṣṭhira
+http://www.wikidata.org/entity/Q1057886,Draupadī,http://www.wikidata.org/entity/Q2389430,Drupada,,,http://www.wikidata.org/entity/Q1978476,Nakula
+http://www.wikidata.org/entity/Q1057886,Draupadī,http://www.wikidata.org/entity/Q2389430,Drupada,,,http://www.wikidata.org/entity/Q2044641,Sahadeva
+http://www.wikidata.org/entity/Q1057886,Draupadī,http://www.wikidata.org/entity/Q2389430,Drupada,,,http://www.wikidata.org/entity/Q3651886,Bhīma
+http://www.wikidata.org/entity/Q1061606,Balarama,,,http://www.wikidata.org/entity/Q379581,Devakī,http://www.wikidata.org/entity/Q3523954,Revatī
+http://www.wikidata.org/entity/Q1114098,Bhagadatta,,,,,,
+http://www.wikidata.org/entity/Q1280951,Savitri and Satyavan,,,,,,
+http://www.wikidata.org/entity/Q1377025,Bharata,http://www.wikidata.org/entity/Q384956,Duṣyanta,http://www.wikidata.org/entity/Q955123,Śakuntalā,http://www.wikidata.org/entity/Q12477754,Bhumanyu
+http://www.wikidata.org/entity/Q1405629,Bhīṣma,http://www.wikidata.org/entity/Q1973947,Śāntanu,http://www.wikidata.org/entity/Q580113,Gangā,,
+http://www.wikidata.org/entity/Q1405823,Duryodhana,http://www.wikidata.org/entity/Q926150,Dhṛtarāṣṭra,http://www.wikidata.org/entity/Q1849082,Gāndhārī,http://www.wikidata.org/entity/Q12474547,Wives of Duryodhana
+http://www.wikidata.org/entity/Q1518806,Manasā,,,,,http://www.wikidata.org/entity/Q19832698,Jaratkaru
+http://www.wikidata.org/entity/Q1580107,Kali,,,,,http://www.wikidata.org/entity/Q3351524,Alakshmi
+http://www.wikidata.org/entity/Q1580107,Kali,,,,,http://www.wikidata.org/entity/Q38793456,Durukti
+http://www.wikidata.org/entity/Q1648561,Kaurava,,,,,,
+http://www.wikidata.org/entity/Q1656495,Ila,http://www.wikidata.org/entity/Q289162,Brahmā,,,http://www.wikidata.org/entity/Q851426,Budha
+http://www.wikidata.org/entity/Q1656495,Ila,http://www.wikidata.org/entity/Q2563319,Vaivasvata Manu,,,http://www.wikidata.org/entity/Q851426,Budha
+http://www.wikidata.org/entity/Q1770690,Mādrī,,,,,http://www.wikidata.org/entity/Q857071,Pāṇḍu
+http://www.wikidata.org/entity/Q1849082,Gāndhārī,,,,,http://www.wikidata.org/entity/Q926150,Dhṛtarāṣṭra
+http://www.wikidata.org/entity/Q1973947,Śāntanu,,,,,http://www.wikidata.org/entity/Q580113,Gangā
+http://www.wikidata.org/entity/Q1973947,Śāntanu,,,,,http://www.wikidata.org/entity/Q2044655,Satyavatī
+http://www.wikidata.org/entity/Q1976196,Ghaṭotkaca,http://www.wikidata.org/entity/Q3651886,Bhīma,http://www.wikidata.org/entity/Q2472701,Hiḍimbī,http://www.wikidata.org/entity/Q2723053,Ahilawati
+http://www.wikidata.org/entity/Q1978476,Nakula,http://www.wikidata.org/entity/Q857071,Pāṇḍu,http://www.wikidata.org/entity/Q1770690,Mādrī,http://www.wikidata.org/entity/Q1057886,Draupadī
+http://www.wikidata.org/entity/Q1978476,Nakula,http://www.wikidata.org/entity/Q857071,Pāṇḍu,http://www.wikidata.org/entity/Q1770690,Mādrī,http://www.wikidata.org/entity/Q65050443,Karenumati
+http://www.wikidata.org/entity/Q1982348,Subhadrā,http://www.wikidata.org/entity/Q890382,Vasudeva,http://www.wikidata.org/entity/Q379581,Devakī,http://www.wikidata.org/entity/Q185790,Arjuna
+http://www.wikidata.org/entity/Q1987279,Vichitravirya,http://www.wikidata.org/entity/Q19794180,Pradu,http://www.wikidata.org/entity/Q2044655,Satyavatī,http://www.wikidata.org/entity/Q1994807,Ambalika
+http://www.wikidata.org/entity/Q1987279,Vichitravirya,http://www.wikidata.org/entity/Q19794180,Pradu,http://www.wikidata.org/entity/Q2044655,Satyavatī,http://www.wikidata.org/entity/Q2044636,Ambika
+http://www.wikidata.org/entity/Q1987473,Ekalavya,,,,,,
+http://www.wikidata.org/entity/Q1992668,Śakuni,,,,,,
+http://www.wikidata.org/entity/Q1994800,Chitrāngada,http://www.wikidata.org/entity/Q1973947,Śāntanu,http://www.wikidata.org/entity/Q2044655,Satyavatī,,
+http://www.wikidata.org/entity/Q1994807,Ambalika,,,,,http://www.wikidata.org/entity/Q1987279,Vichitravirya
+http://www.wikidata.org/entity/Q2000962,Rohini Devi,,,,,http://www.wikidata.org/entity/Q890382,Vasudeva
+http://www.wikidata.org/entity/Q2002511,Vidura,,,,,,
+http://www.wikidata.org/entity/Q2019782,Avanti,,,,,,
+http://www.wikidata.org/entity/Q2044550,Aśvatthāmā,http://www.wikidata.org/entity/Q890529,Droṇa,,,,
+http://www.wikidata.org/entity/Q2044636,Ambika,,,,,http://www.wikidata.org/entity/Q1987279,Vichitravirya
+http://www.wikidata.org/entity/Q2044641,Sahadeva,http://www.wikidata.org/entity/Q857071,Pāṇḍu,http://www.wikidata.org/entity/Q1770690,Mādrī,http://www.wikidata.org/entity/Q1057886,Draupadī
+http://www.wikidata.org/entity/Q2044641,Sahadeva,http://www.wikidata.org/entity/Q2723062,Jarāsandha,http://www.wikidata.org/entity/Q1770690,Mādrī,http://www.wikidata.org/entity/Q1057886,Draupadī
+http://www.wikidata.org/entity/Q2044641,Sahadeva,http://www.wikidata.org/entity/Q857071,Pāṇḍu,http://www.wikidata.org/entity/Q116313886,Vaishnavivati,http://www.wikidata.org/entity/Q1057886,Draupadī
+http://www.wikidata.org/entity/Q2044641,Sahadeva,http://www.wikidata.org/entity/Q2723062,Jarāsandha,http://www.wikidata.org/entity/Q116313886,Vaishnavivati,http://www.wikidata.org/entity/Q1057886,Draupadī
+http://www.wikidata.org/entity/Q2044646,Duḥśāsana,http://www.wikidata.org/entity/Q926150,Dhṛtarāṣṭra,http://www.wikidata.org/entity/Q1849082,Gāndhārī,,
+http://www.wikidata.org/entity/Q2044655,Satyavatī,,,,,http://www.wikidata.org/entity/Q1973947,Śāntanu
+http://www.wikidata.org/entity/Q2044664,Irāvān,http://www.wikidata.org/entity/Q185790,Arjuna,http://www.wikidata.org/entity/Q2723089,Ulūpī,,
+http://www.wikidata.org/entity/Q2044671,Kṛpa,,,,,,
+http://www.wikidata.org/entity/Q2046277,Parīkṣit,http://www.wikidata.org/entity/Q320606,Abhimanyu,http://www.wikidata.org/entity/Q2389445,Uttarā,,
+http://www.wikidata.org/entity/Q2073479,Śaunaka,,,,,,
+http://www.wikidata.org/entity/Q2075682,Ugrasrava Sauti,,,,,,
+http://www.wikidata.org/entity/Q2091602,Yayāti,http://www.wikidata.org/entity/Q2633157,Nahuṣa,http://www.wikidata.org/entity/Q16039150,Ashokasundari,http://www.wikidata.org/entity/Q3521317,Devayānī
+http://www.wikidata.org/entity/Q2091602,Yayāti,http://www.wikidata.org/entity/Q2633157,Nahuṣa,http://www.wikidata.org/entity/Q16039150,Ashokasundari,http://www.wikidata.org/entity/Q7489930,Sharmishtha
+http://www.wikidata.org/entity/Q2092267,Kamsa,http://www.wikidata.org/entity/Q2978451,Ugrasena,,,,
+http://www.wikidata.org/entity/Q2357063,Śikhaṇḍī,http://www.wikidata.org/entity/Q2389430,Drupada,,,,
+http://www.wikidata.org/entity/Q2357086,Dhṛṣṭadyumna,http://www.wikidata.org/entity/Q2389430,Drupada,,,,
+http://www.wikidata.org/entity/Q2361344,Durvāsā,,,,,,
+http://www.wikidata.org/entity/Q2367305,Chitrangada,,,,,http://www.wikidata.org/entity/Q185790,Arjuna
+http://www.wikidata.org/entity/Q2381126,Śalya,,,,,,
+http://www.wikidata.org/entity/Q2381146,Jayadratha,,,,,http://www.wikidata.org/entity/Q2723039,Duhsala
+http://www.wikidata.org/entity/Q2381158,Sātyaki,,,,,,
+http://www.wikidata.org/entity/Q2382488,Kīcaka,,,,,,
+http://www.wikidata.org/entity/Q2389430,Drupada,,,,,,
+http://www.wikidata.org/entity/Q2389445,Uttarā,http://www.wikidata.org/entity/Q2978459,Virāṭa,http://www.wikidata.org/entity/Q15290894,Sudeshna,http://www.wikidata.org/entity/Q320606,Abhimanyu
+http://www.wikidata.org/entity/Q2389469,Sanjaya,,,,,,
+http://www.wikidata.org/entity/Q2392426,Yuyutsu,http://www.wikidata.org/entity/Q926150,Dhṛtarāṣṭra,,,,
+http://www.wikidata.org/entity/Q3519846,Dadhichi,,,,,,
+http://www.wikidata.org/entity/Q3521317,Devayānī,http://www.wikidata.org/entity/Q572235,Shukra,http://www.wikidata.org/entity/Q18126249,Jayanti,http://www.wikidata.org/entity/Q2091602,Yayāti
+http://www.wikidata.org/entity/Q3521321,Damayantī,,,,,http://www.wikidata.org/entity/Q2588460,Nala
+http://www.wikidata.org/entity/Q3523954,Revatī,http://www.wikidata.org/entity/Q17006665,Kakudmi,,,http://www.wikidata.org/entity/Q1061606,Balarama
+http://www.wikidata.org/entity/Q3536310,Kacha,http://www.wikidata.org/entity/Q916959,Brihaspati,http://www.wikidata.org/entity/Q2625996,Taraka,,
+http://www.wikidata.org/entity/Q3542007,Tumburu,,,,,,
+http://www.wikidata.org/entity/Q3595632,Āstīka,,,,,,
+http://www.wikidata.org/entity/Q3631282,Mucukunda,http://www.wikidata.org/entity/Q2994352,Mandhatri,,,,
+http://www.wikidata.org/entity/Q3634500,Khatushyam,,,,,,
+http://www.wikidata.org/entity/Q3651886,Bhīma,http://www.wikidata.org/entity/Q857071,Pāṇḍu,http://www.wikidata.org/entity/Q844424,Kuntī,http://www.wikidata.org/entity/Q1057886,Draupadī
+http://www.wikidata.org/entity/Q3651886,Bhīma,http://www.wikidata.org/entity/Q857071,Pāṇḍu,http://www.wikidata.org/entity/Q844424,Kuntī,http://www.wikidata.org/entity/Q2472701,Hiḍimbī
+http://www.wikidata.org/entity/Q4180707,Gandiva,,,,,,
+http://www.wikidata.org/entity/Q4209828,Uttara,http://www.wikidata.org/entity/Q2978459,Virāṭa,http://www.wikidata.org/entity/Q15290894,Sudeshna,,
+http://www.wikidata.org/entity/Q4210132,Kunti-Bhoja,,,,,,
+http://www.wikidata.org/entity/Q4211174,Shurasena,http://www.wikidata.org/entity/Q114703819,Devamida,,,,
+http://www.wikidata.org/entity/Q4248950,Kuru,,,http://www.wikidata.org/entity/Q4451421,Tapati,,
+http://www.wikidata.org/entity/Q4250498,Khandava Forest,,,,,,
+http://www.wikidata.org/entity/Q4259965,Devapi,,,,,,
+http://www.wikidata.org/entity/Q4263257,Radha,,,,,,
+http://www.wikidata.org/entity/Q4748784,Amshuman,http://www.wikidata.org/entity/Q4262997,Asamanja,,,,
+http://www.wikidata.org/entity/Q4842924,Bahuka,,,,,,
+http://www.wikidata.org/entity/Q4967948,Brihannala,,,,,,
+http://www.wikidata.org/entity/Q5102328,Chitralekha,,,,,,
+http://www.wikidata.org/entity/Q5102358,Chitrasena,,,,,,
+http://www.wikidata.org/entity/Q5221128,Dantavakra,,,,,,
+http://www.wikidata.org/entity/Q5305941,Draupati Amman,,,,,,
+http://www.wikidata.org/entity/Q6026868,Indradyumna,http://www.wikidata.org/entity/Q1377025,Bharata,,,,
+http://www.wikidata.org/entity/Q6410536,Kindama,,,,,,
+http://www.wikidata.org/entity/Q6411966,Puru,http://www.wikidata.org/entity/Q2091602,Yayāti,http://www.wikidata.org/entity/Q7489930,Sharmishtha,,
+http://www.wikidata.org/entity/Q6505158,Laxman Kumara,http://www.wikidata.org/entity/Q1405823,Duryodhana,,,,
+http://www.wikidata.org/entity/Q7238402,Prapaksha Kamboja,,,,,,
+http://www.wikidata.org/entity/Q7261362,Purochana,,,,,,
+http://www.wikidata.org/entity/Q7410313,Samsaptakas,,,,,,
+http://www.wikidata.org/entity/Q7489930,Sharmishtha,http://www.wikidata.org/entity/Q7943139,Vrishparva,,,http://www.wikidata.org/entity/Q2091602,Yayāti
+http://www.wikidata.org/entity/Q7633279,Sudakshina,,,,,,
+http://www.wikidata.org/entity/Q7880794,Uluka,,,,,,
+http://www.wikidata.org/entity/Q7898172,Draupadeyas,,,,,,
+http://www.wikidata.org/entity/Q7903312,Uttamabhadras,,,,,,
+http://www.wikidata.org/entity/Q7908938,Vajra,,,,,,
+http://www.wikidata.org/entity/Q7929388,Vikarna,http://www.wikidata.org/entity/Q926150,Dhṛtarāṣṭra,http://www.wikidata.org/entity/Q1849082,Gāndhārī,http://www.wikidata.org/entity/Q117422847,Sudeshnavati
+http://www.wikidata.org/entity/Q7943139,Vrishparva,,,,,,
+http://www.wikidata.org/entity/Q10337003,Niramitra,http://www.wikidata.org/entity/Q1978476,Nakula,,,,
+http://www.wikidata.org/entity/Q10575465,Maitreya,,,,,,
+http://www.wikidata.org/entity/Q12434647,Q12434647,,,,,,
+http://www.wikidata.org/entity/Q12442387,Brihadbala,,,,,,
+http://www.wikidata.org/entity/Q12452536,Bahlika,,,,,,
+http://www.wikidata.org/entity/Q12456719,Savitri,,,,,,
+http://www.wikidata.org/entity/Q12474547,Wives of Duryodhana,,,,,http://www.wikidata.org/entity/Q1405823,Duryodhana
+http://www.wikidata.org/entity/Q12506306,Prabukusuma,,,,,,
+http://www.wikidata.org/entity/Q12769888,Q12769888,,,,,,
+http://www.wikidata.org/entity/Q13091533,Alobha,,,,,,
+http://www.wikidata.org/entity/Q13091608,Anuradha,,,,,,
+http://www.wikidata.org/entity/Q13091664,Arya Seta,,,,,,
+http://www.wikidata.org/entity/Q13091685,Aswaketu,,,,,,
+http://www.wikidata.org/entity/Q13091753,Bahwasi,,,,,,
+http://www.wikidata.org/entity/Q13092129,Bhimadewa,,,,,,
+http://www.wikidata.org/entity/Q13092392,Carucitra,,,,,,
+http://www.wikidata.org/entity/Q13092464,Citrangga,,,,,,
+http://www.wikidata.org/entity/Q13092607,Dananjaya,,,,,,
+http://www.wikidata.org/entity/Q13092620,Darmagosa,,,,,,
+http://www.wikidata.org/entity/Q13092817,Dretapara,,,,,,
+http://www.wikidata.org/entity/Q13092826,Duhsa,,,,,,
+http://www.wikidata.org/entity/Q13092848,Durbalaki,,,,,,
+http://www.wikidata.org/entity/Q13092850,Durdharsa,,,,,,
+http://www.wikidata.org/entity/Q13092867,Duskarna,,,,,,
+http://www.wikidata.org/entity/Q13093406,Hayabahu,,,,,,
+http://www.wikidata.org/entity/Q13093597,Jarasanda,,,,,,
+http://www.wikidata.org/entity/Q13093804,Q13093804,http://www.wikidata.org/entity/Q97696530,Q97696530,,,,
+http://www.wikidata.org/entity/Q13094823,Mahacitra,,,,,,
+http://www.wikidata.org/entity/Q13096183,Prabhata,,,,,,
+http://www.wikidata.org/entity/Q13096191,Pramathi,,,,,,
+http://www.wikidata.org/entity/Q13096933,Senani,,,,,,
+http://www.wikidata.org/entity/Q13097275,Sudatra,,,,,,
+http://www.wikidata.org/entity/Q13097524,Surasakti,,,,,,
+http://www.wikidata.org/entity/Q13098218,Ugra,,,,,,
+http://www.wikidata.org/entity/Q13098219,Ugrasrayi,,,,,,
+http://www.wikidata.org/entity/Q13098280,Upacitra,,,,,,
+http://www.wikidata.org/entity/Q13098559,Wiwitsu,,,,,,
+http://www.wikidata.org/entity/Q13121409,Śala,http://www.wikidata.org/entity/Q926150,Dhṛtarāṣṭra,,,,
+http://www.wikidata.org/entity/Q13122029,Q13122029,,,,,,
+http://www.wikidata.org/entity/Q13122068,Q13122068,,,,,,
+http://www.wikidata.org/entity/Q14589610,Bhadra,,,,,http://www.wikidata.org/entity/Q42891,Krishna
+http://www.wikidata.org/entity/Q14589648,Ashtabharya,,,,,,
+http://www.wikidata.org/entity/Q14589858,Lakshmana,,,,,http://www.wikidata.org/entity/Q42891,Krishna
+http://www.wikidata.org/entity/Q15220325,Brihadratha,,,,,,
+http://www.wikidata.org/entity/Q15290894,Sudeshna,,,,,http://www.wikidata.org/entity/Q2978459,Virāṭa
+http://www.wikidata.org/entity/Q15645224,Uttamaujas,,,,,,
+http://www.wikidata.org/entity/Q15845154,Svecchamrityu,,,,,,
+http://www.wikidata.org/entity/Q16002315,akrodha,,,,,,
+http://www.wikidata.org/entity/Q16879757,Bambang Sumitra,,,,,,
+http://www.wikidata.org/entity/Q16889475,Kamatha,,,,,,
+http://www.wikidata.org/entity/Q17001606,Chandravarma Kamboja,,,,,,
+http://www.wikidata.org/entity/Q17006665,Kakudmi,,,,,,
+http://www.wikidata.org/entity/Q17006691,Kalmāṣapāda,,,,,,
+http://www.wikidata.org/entity/Q17023260,Svetaketu,,,,,,
+http://www.wikidata.org/entity/Q18208171,Vajradatta,,,,,,
+http://www.wikidata.org/entity/Q18208212,Vijaya,,,,,,
+http://www.wikidata.org/entity/Q19832698,Jaratkaru,,,,,http://www.wikidata.org/entity/Q1518806,Manasā
+http://www.wikidata.org/entity/Q19896979,character in the Mahabharata,,,,,,
+http://www.wikidata.org/entity/Q19899102,Uttanka,,,,,,
+http://www.wikidata.org/entity/Q22906248,Lakshmanaa,http://www.wikidata.org/entity/Q1405823,Duryodhana,,,http://www.wikidata.org/entity/Q2841495,Samba
+http://www.wikidata.org/entity/Q24054436,Vrishasena,http://www.wikidata.org/entity/Q2727397,Karṇa,,,,
+http://www.wikidata.org/entity/Q24943989,Kaunteya,,,,,,
+http://www.wikidata.org/entity/Q24943990,Madreya,,,,,,
+http://www.wikidata.org/entity/Q25927082,Suśarmā,,,,,,
+http://www.wikidata.org/entity/Q26695703,Kalanemi,,,,,,
+http://www.wikidata.org/entity/Q30673061,Madravti,,,,,,
+http://www.wikidata.org/entity/Q55637249,Vyushitaswa,http://www.wikidata.org/entity/Q4248950,Kuru,,,,
+http://www.wikidata.org/entity/Q65050457,Devika,,,,,http://www.wikidata.org/entity/Q983067,Yudhiṣṭhira
+http://www.wikidata.org/entity/Q65661521,Kertolo Statue,,,,,,
+http://www.wikidata.org/entity/Q65661526,Bima Statue,,,,,,
+http://www.wikidata.org/entity/Q65661531,Bima Statue,,,,,,
+http://www.wikidata.org/entity/Q65661544,Bima Statue,,,,,,
+http://www.wikidata.org/entity/Q65663112,Bima Statue,,,,,,
+http://www.wikidata.org/entity/Q95368656,Shrutsena,http://www.wikidata.org/entity/Q1978476,Nakula,,,,
+http://www.wikidata.org/entity/Q97696530,Q97696530,,,,,,
+http://www.wikidata.org/entity/Q117422847,Sudeshnavati,,,,,http://www.wikidata.org/entity/Q7929388,Vikarna
+http://www.wikidata.org/entity/Q118150777,Jyotsyana,http://www.wikidata.org/entity/Q7929388,Vikarna,http://www.wikidata.org/entity/Q117422847,Sudeshnavati,,
+http://www.wikidata.org/entity/Q118175951,Nirjara,,,,,http://www.wikidata.org/entity/Q2044646,Duḥśāsana
+http://www.wikidata.org/entity/Q118370072,Dhanumati,,,,,http://www.wikidata.org/entity/Q2357086,Dhṛṣṭadyumna
+http://www.wikidata.org/entity/Q118370106,Dhanumati,,,,,http://www.wikidata.org/entity/Q2357086,Dhṛṣṭadyumna
+http://www.wikidata.org/entity/Q130240721,Q130240721,,,,,,
+http://www.wikidata.org/entity/Q134447107,Q134447107,,,,,http://www.wikidata.org/entity/Q1405823,Duryodhana
+http://www.wikidata.org/entity/Q136796061,Q136796061,http://www.wikidata.org/entity/Q857071,Pāṇḍu,http://www.wikidata.org/entity/Q1770690,Mādrī,http://www.wikidata.org/entity/Q2357086,Dhṛṣṭadyumna
+http://www.wikidata.org/entity/Q2978464,Śiśupāla,,,,,,
+http://www.wikidata.org/entity/Q3049561,Rishyasringa,http://www.wikidata.org/entity/Q16886331,Vibhandak Rishi,http://www.wikidata.org/entity/Q2307799,Urvaśī,http://www.wikidata.org/entity/Q7489020,Shanta
+http://www.wikidata.org/entity/Q3269155,Banasura,http://www.wikidata.org/entity/Q59178,Mahabali,,,,
+http://www.wikidata.org/entity/Q3275998,Tilottama,,,,,http://www.wikidata.org/entity/Q2879755,Aniruddha
+http://www.wikidata.org/entity/Q2841495,Samba,http://www.wikidata.org/entity/Q42891,Krishna,,,http://www.wikidata.org/entity/Q22906248,Lakshmanaa
+http://www.wikidata.org/entity/Q2879755,Aniruddha,http://www.wikidata.org/entity/Q3764980,Pradyumna,,,http://www.wikidata.org/entity/Q98382191,Usha
+http://www.wikidata.org/entity/Q2978451,Ugrasena,,,,,,
+http://www.wikidata.org/entity/Q2978459,Virāṭa,,,,,http://www.wikidata.org/entity/Q15290894,Sudeshna
+http://www.wikidata.org/entity/Q2472652,Adhiratha,,,,,,
+http://www.wikidata.org/entity/Q2472701,Hiḍimbī,,,,,http://www.wikidata.org/entity/Q3651886,Bhīma
+http://www.wikidata.org/entity/Q2472921,Babhruvāhana,http://www.wikidata.org/entity/Q185790,Arjuna,http://www.wikidata.org/entity/Q2367305,Chitrangada,,
+http://www.wikidata.org/entity/Q2477603,Vaisampayana,,,,,,
+http://www.wikidata.org/entity/Q2479214,Anasuya,http://www.wikidata.org/entity/Q11735625,Kardama,,,http://www.wikidata.org/entity/Q757727,Atri
+http://www.wikidata.org/entity/Q2588460,Nala,,,,,http://www.wikidata.org/entity/Q3521321,Damayantī
+http://www.wikidata.org/entity/Q2601106,Rukmī,http://www.wikidata.org/entity/Q4100813,Bhishmaka,,,,
+http://www.wikidata.org/entity/Q2633157,Nahuṣa,,,,,http://www.wikidata.org/entity/Q16039150,Ashokasundari
+http://www.wikidata.org/entity/Q2633766,Takṣaka,,,,,,
+http://www.wikidata.org/entity/Q2657428,Śhukdev,http://www.wikidata.org/entity/Q330521,Vyāsa,,,,
+http://www.wikidata.org/entity/Q2669309,Kritavarma,,,,,,
+http://www.wikidata.org/entity/Q2669688,Barbarika,,,,,,
+http://www.wikidata.org/entity/Q2671513,Kāliya,,,,,,
+http://www.wikidata.org/entity/Q2721773,Ambā,,,,,,
+http://www.wikidata.org/entity/Q2722590,Khandavaprastha,,,,,,
+http://www.wikidata.org/entity/Q2723039,Duhsala,http://www.wikidata.org/entity/Q926150,Dhṛtarāṣṭra,http://www.wikidata.org/entity/Q1849082,Gāndhārī,http://www.wikidata.org/entity/Q2381146,Jayadratha
+http://www.wikidata.org/entity/Q2723049,Mayasura,http://www.wikidata.org/entity/Q1513261,Kashyapa,http://www.wikidata.org/entity/Q1230306,Diti,,
+http://www.wikidata.org/entity/Q2723053,Ahilawati,,,,,http://www.wikidata.org/entity/Q1976196,Ghaṭotkaca
+http://www.wikidata.org/entity/Q2723062,Jarāsandha,http://www.wikidata.org/entity/Q15220325,Brihadratha,,,,
+http://www.wikidata.org/entity/Q2723089,Ulūpī,,,,,http://www.wikidata.org/entity/Q185790,Arjuna
+http://www.wikidata.org/entity/Q2724067,Bakasura,,,,,,
+http://www.wikidata.org/entity/Q2724299,Aruni,,,,,,
+http://www.wikidata.org/entity/Q2724587,Bhūriśravas,,,,,,
+http://www.wikidata.org/entity/Q2727397,Karṇa,http://www.wikidata.org/entity/Q204418,Surya,http://www.wikidata.org/entity/Q844424,Kuntī,http://www.wikidata.org/entity/Q104858649,Wives of Karna
+http://www.wikidata.org/entity/Q2727397,Karṇa,http://www.wikidata.org/entity/Q2472652,Adhiratha,http://www.wikidata.org/entity/Q844424,Kuntī,http://www.wikidata.org/entity/Q104858649,Wives of Karna
+http://www.wikidata.org/entity/Q2727397,Karṇa,http://www.wikidata.org/entity/Q204418,Surya,http://www.wikidata.org/entity/Q4263257,Radha,http://www.wikidata.org/entity/Q104858649,Wives of Karna
+http://www.wikidata.org/entity/Q2727397,Karṇa,http://www.wikidata.org/entity/Q2472652,Adhiratha,http://www.wikidata.org/entity/Q4263257,Radha,http://www.wikidata.org/entity/Q104858649,Wives of Karna
+http://www.wikidata.org/entity/Q19899160,Vrihanta,,,,,,

@@ -1,0 +1,1815 @@
+{
+  "_meta": {
+    "description": "Ground truth built from attestation-based extraction (reviewed) + CSV dataset",
+    "method": "spaCy dependency parsing + human review + test_relations.csv",
+    "total_relationships": 158
+  },
+  "entities": {
+    "characters": [
+      {
+        "name": "Abhimanyu",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Adhiratha",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Amba",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Ambalika",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Ambika",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Aniruddha",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Arjuna",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Ashvatthama",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Babhruvahana",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Bahlika",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Bhagadatta",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Bhima",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Bhishma",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Bhurishravas",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Bhurisravas",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Chitrangada",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Chitrasena",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Damaghosa",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Dasarna King",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Devala",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Devavrata",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Dhaumya",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Dhristadyumna",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Dhristaketu",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Dhritarashtra",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Dhritarastra",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Draupadi",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Drona",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Drupada",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Duhshasana",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Durmuka",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Duryodhana",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Gandhara King",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Gandhari",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Ganga",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Ghatotkacha",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Harischandra",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Hidimva",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Indra",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Jalasandha",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Jamadagni",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Jambavati",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Jarasandha",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Kamsa",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Karna",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Kartavirya Arjuna",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Kauravas",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "King",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "King Jarasandha",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "King Nagnajit",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "King Subala",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "King Surasena",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "King Yudhisthira",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Kirmira",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Krata",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Kripa",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Krishna",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Krishna Dvaipayana Vyasa",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Kunti",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Lakshman",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Lakshmana",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Lord Baladeva",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Lord Balarama",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Lord Krishna",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Madras King",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Madri",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Maharaja Shantanu",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Nakula",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Niramitra",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Nivatakavachas",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Pandavas",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Pandu",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Parashurama",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Parasurama",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Pradyumna",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Pratipa",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Prativindya",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Prtha",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Queen Kunti",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Radha",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Rakshasa Kirmira",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Ravana",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Rohini",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Rukmi",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Rukmini",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Sachi",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Sahadeva",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Samba",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Sangramajit",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Saradwat",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Satanika",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Satrajit",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Satya",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Satyabhama",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Satyaki",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Satyavati",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Shakuni",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Shalya",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Shantanu",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Shikhandhi",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Shishupala",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Shisupala",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Somadatta",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Srutakarman",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Srutakirti",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Srutayudha",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Srutayush",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Subala",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Subhadra",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Sudeshna",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Surya",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Susena",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Sutasoma",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Sweta",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Trishanku",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Uluka",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Ulupi",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Uttara",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Vahvasin",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Vajra",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Varuna",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Vibhishana",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Vichitravirya",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Vidura",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Vikarna",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Vikata",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Virata",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Vrika",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Vrishasena",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Vritrasura",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Vyasa",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Vyasadeva",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Wind God",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Yamaraja",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Yudhishthira",
+        "aliases": [],
+        "description": ""
+      },
+      {
+        "name": "Yudhisthira",
+        "aliases": [],
+        "description": ""
+      }
+    ],
+    "locations": [],
+    "weapons": [],
+    "clans": [],
+    "events": []
+  },
+  "relationships": {
+    "SON_OF": [
+      {
+        "source": "Devavrata",
+        "target": "Shantanu",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Devavrata",
+        "target": "Ganga",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Bhishma",
+        "target": "Shantanu",
+        "verified": true,
+        "origin": "attested+csv",
+        "attestations": 7
+      },
+      {
+        "source": "Bhishma",
+        "target": "Ganga",
+        "verified": true,
+        "origin": "attested+csv",
+        "attestations": 1
+      },
+      {
+        "source": "Vichitravirya",
+        "target": "Shantanu",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Vichitravirya",
+        "target": "Satyavati",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Chitrangada",
+        "target": "Shantanu",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Chitrangada",
+        "target": "Satyavati",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Dhritarastra",
+        "target": "Vichitravirya",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Dhritarastra",
+        "target": "Ambika",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Pandu",
+        "target": "Vichitravirya",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Pandu",
+        "target": "Ambalika",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Vidura",
+        "target": "Vichitravirya",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Bhima",
+        "target": "Kunti",
+        "verified": true,
+        "origin": "attested+csv",
+        "attestations": 2
+      },
+      {
+        "source": "Yudhisthira",
+        "target": "Pandu",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Arjuna",
+        "target": "Kunti",
+        "verified": true,
+        "origin": "attested+csv",
+        "attestations": 9
+      },
+      {
+        "source": "Bhima",
+        "target": "Pandu",
+        "verified": true,
+        "origin": "attested+csv",
+        "attestations": 2
+      },
+      {
+        "source": "Yudhisthira",
+        "target": "Kunti",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Arjuna",
+        "target": "Pandu",
+        "verified": true,
+        "origin": "attested+csv",
+        "attestations": 4
+      },
+      {
+        "source": "Nakula",
+        "target": "Madri",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Nakula",
+        "target": "Pandu",
+        "verified": true,
+        "origin": "attested+csv",
+        "attestations": 1
+      },
+      {
+        "source": "Sahadeva",
+        "target": "Madri",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Sahadeva",
+        "target": "Pandu",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Abhimanyu",
+        "target": "Subhadra",
+        "verified": true,
+        "origin": "attested+csv",
+        "attestations": 1
+      },
+      {
+        "source": "Abhimanyu",
+        "target": "Arjuna",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Prativindya",
+        "target": "Draupadi",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Prativindya",
+        "target": "Yudhisthira",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Sutasoma",
+        "target": "Draupadi",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Sutasoma",
+        "target": "Bhima",
+        "verified": true,
+        "origin": "attested+csv",
+        "attestations": 1
+      },
+      {
+        "source": "Srutakarman",
+        "target": "Draupadi",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Srutakirti",
+        "target": "Arjuna",
+        "verified": true,
+        "origin": "attested+csv",
+        "attestations": 2
+      },
+      {
+        "source": "Srutakirti",
+        "target": "Draupadi",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Ghatotkacha",
+        "target": "Bhima",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Satanika",
+        "target": "Draupadi",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Babhruvahana",
+        "target": "Arjuna",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Babhruvahana",
+        "target": "Chitrangada",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Duryodhana",
+        "target": "Dhritarastra",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Duryodhana",
+        "target": "Gandhari",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Duhshasana",
+        "target": "Dhritarastra",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Duhshasana",
+        "target": "Gandhari",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Karna",
+        "target": "Kunti",
+        "verified": true,
+        "origin": "attested+csv",
+        "attestations": 1
+      },
+      {
+        "source": "Ashvatthama",
+        "target": "Drona",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 3
+      },
+      {
+        "source": "Duryodhana",
+        "target": "Dhritarashtra",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 2
+      },
+      {
+        "source": "Kripa",
+        "target": "Saradwat",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 2
+      },
+      {
+        "source": "Yudhishthira",
+        "target": "Pandu",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 2
+      },
+      {
+        "source": "Dhristadyumna",
+        "target": "Drupada",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 2
+      },
+      {
+        "source": "Pandavas",
+        "target": "Kunti",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 2
+      },
+      {
+        "source": "Karna",
+        "target": "Radha",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 2
+      },
+      {
+        "source": "Shikhandhi",
+        "target": "Drupada",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 2
+      },
+      {
+        "source": "Lakshman",
+        "target": "Duryodhana",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 2
+      },
+      {
+        "source": "Samba",
+        "target": "Jambavati",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 2
+      },
+      {
+        "source": "Maharaja Shantanu",
+        "target": "Pratipa",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Shakuni",
+        "target": "Subala",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Karna",
+        "target": "Adhiratha",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Yudhishthira",
+        "target": "Kunti",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Yudhishthira",
+        "target": "Yamaraja",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Vyasa",
+        "target": "Satyavati",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Shakuni",
+        "target": "Gandhara King",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Shishupala",
+        "target": "Damaghosa",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Harischandra",
+        "target": "Trishanku",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Bhima",
+        "target": "Wind God",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Sahadeva",
+        "target": "King Jarasandha",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Sahadeva",
+        "target": "Jarasandha",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Dhritarashtra",
+        "target": "Krishna Dvaipayana Vyasa",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "King Yudhisthira",
+        "target": "Pandu",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Parasurama",
+        "target": "Jamadagni",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Pradyumna",
+        "target": "Rukmini",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Dhritarashtra",
+        "target": "Vyasa",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Vikarna",
+        "target": "Dhritarashtra",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Uttara",
+        "target": "King",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Uluka",
+        "target": "Shakuni",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Bhurisravas",
+        "target": "Somadatta",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Vrishasena",
+        "target": "Karna",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Karna",
+        "target": "Surya",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Vyasadeva",
+        "target": "Satyavati",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "King Yudhisthira",
+        "target": "Kunti",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Arjuna",
+        "target": "Prtha",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Lakshmana",
+        "target": "Duryodhana",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Srutayudha",
+        "target": "Varuna",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Durmuka",
+        "target": "Dhritarashtra",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Dhristaketu",
+        "target": "Shisupala",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Bahlika",
+        "target": "Pratipa",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Susena",
+        "target": "Karna",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Satanika",
+        "target": "Nakula",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Satyabhama",
+        "target": "Satrajit",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Lord Baladeva",
+        "target": "Rohini",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Vajra",
+        "target": "Aniruddha",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      }
+    ],
+    "MARRIED_TO": [
+      {
+        "source": "Shantanu",
+        "target": "Ganga",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Shantanu",
+        "target": "Satyavati",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Vichitravirya",
+        "target": "Ambalika",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Vichitravirya",
+        "target": "Ambika",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Dhritarastra",
+        "target": "Gandhari",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Pandu",
+        "target": "Kunti",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Pandu",
+        "target": "Madri",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Arjuna",
+        "target": "Subhadra",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Yudhisthira",
+        "target": "Draupadi",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Bhima",
+        "target": "Draupadi",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Arjuna",
+        "target": "Draupadi",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Nakula",
+        "target": "Draupadi",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Sahadeva",
+        "target": "Draupadi",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Queen Kunti",
+        "target": "Pandu",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Sachi",
+        "target": "Indra",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Sudeshna",
+        "target": "King",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      }
+    ],
+    "SIBLING_OF": [
+      {
+        "source": "Pandu",
+        "target": "Dhritarastra",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Bhima",
+        "target": "Arjuna",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Pandu",
+        "target": "Vidura",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Bhima",
+        "target": "Yudhisthira",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Bhima",
+        "target": "Nakula",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Dhritarastra",
+        "target": "Vidura",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Bhima",
+        "target": "Sahadeva",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Arjuna",
+        "target": "Yudhisthira",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Arjuna",
+        "target": "Nakula",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Arjuna",
+        "target": "Sahadeva",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Yudhisthira",
+        "target": "Nakula",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Yudhisthira",
+        "target": "Sahadeva",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Nakula",
+        "target": "Sahadeva",
+        "verified": true,
+        "origin": "csv",
+        "attestations": 1
+      },
+      {
+        "source": "Madri",
+        "target": "Shalya",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Dhaumya",
+        "target": "Devala",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Subhadra",
+        "target": "Krishna",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Vibhishana",
+        "target": "Ravana",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Sangramajit",
+        "target": "Karna",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Lord Balarama",
+        "target": "Lord Krishna",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Satanika",
+        "target": "Virata",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Chitrasena",
+        "target": "Karna",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      }
+    ],
+    "KILLED": [
+      {
+        "source": "Arjuna",
+        "target": "Karna",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 3
+      },
+      {
+        "source": "Bhima",
+        "target": "Jarasandha",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 2
+      },
+      {
+        "source": "Bhima",
+        "target": "Hidimva",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 2
+      },
+      {
+        "source": "Shikhandhi",
+        "target": "Bhishma",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 2
+      },
+      {
+        "source": "Bhima",
+        "target": "Duryodhana",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 2
+      },
+      {
+        "source": "Satyaki",
+        "target": "Bhurishravas",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 2
+      },
+      {
+        "source": "Parashurama",
+        "target": "Kartavirya Arjuna",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Krishna",
+        "target": "Shishupala",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Bhima",
+        "target": "Kirmira",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Bhima",
+        "target": "Rakshasa Kirmira",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Indra",
+        "target": "Vritrasura",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Arjuna",
+        "target": "Nivatakavachas",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Bhishma",
+        "target": "Sweta",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Bhima",
+        "target": "Srutayush",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Bhima",
+        "target": "Vahvasin",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Bhishma",
+        "target": "Satanika",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Krishna",
+        "target": "Kamsa",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Drona",
+        "target": "Vrika",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Bhagadatta",
+        "target": "Dasarna King",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Kauravas",
+        "target": "Abhimanyu",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Sahadeva",
+        "target": "Niramitra",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Lord Krishna",
+        "target": "Shisupala",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Satyaki",
+        "target": "Jalasandha",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Bhima",
+        "target": "Vikata",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Bhima",
+        "target": "Krata",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      }
+    ],
+    "MENTOR_OF": [
+      {
+        "source": "Parashurama",
+        "target": "Bhishma",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 2
+      },
+      {
+        "source": "Drona",
+        "target": "Rukmi",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      }
+    ],
+    "DAUGHTER_OF": [
+      {
+        "source": "Gandhari",
+        "target": "Gandhara King",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Kunti",
+        "target": "King Surasena",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Gandhari",
+        "target": "King Subala",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Madri",
+        "target": "Madras King",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Satya",
+        "target": "King Nagnajit",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Ulupi",
+        "target": "King",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      },
+      {
+        "source": "Amba",
+        "target": "King",
+        "verified": true,
+        "origin": "attested",
+        "attestations": 1
+      }
+    ]
+  }
+}

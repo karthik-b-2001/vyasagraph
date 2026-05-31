@@ -1,0 +1,176 @@
+source,target,type,attestations,approved,reason
+Arjuna,Kunti,SON_OF,9,yes,
+Bhishma,Shantanu,SON_OF,7,yes,
+Arjuna,Pandu,SON_OF,4,yes,
+Krishna,Krishna,SON_OF,4,no,parse error: "Krishna the son of Vasudeva" — Vasudeva is aliased to Krishna
+Abhimanyu,Draupadi,SON_OF,4,no,parse error: "Abhimanyu... the sons of Draupadi" are separate items in a list
+Pandu,Dhritarashtra,SON_OF,3,no,parse error: "sons of Pandu and sons of Dhritarashtra" means their children — they are siblings
+Ashvatthama,Drona,SON_OF,3,yes,
+Arjuna,Karna,KILLED,3,yes,
+Satyaki,Draupadi,SON_OF,3,no,parse error: same list separation problem as Abhimanyu
+Parashurama,Bhishma,MENTOR_OF,2,yes,
+Duryodhana,Dhritarashtra,SON_OF,2,yes,
+Kripa,Saradwat,SON_OF,2,yes,
+Yudhishthira,Pandu,SON_OF,2,yes,
+Bhima,Rakshasa,KILLED,2,no,Rakshasa is a category not a named character
+Bhima,Pandu,SON_OF,2,yes,
+Dhristadyumna,Drupada,SON_OF,2,yes,
+Kripa,Drona,SON_OF,2,no,parse error: "Kripa and the son of Bharadvaja Drona" is a list — Kripa is not Drona's son
+Bhima,Jarasandha,KILLED,2,yes,
+Bhima,Hidimva,KILLED,2,yes,Hidimba the rakshasa brother
+Shikhandhi,Bhishma,KILLED,2,yes,with Arjuna's support
+Bhima,Duryodhana,KILLED,2,yes,
+Bhima,Kunti,SON_OF,2,yes,
+Arjuna,Dhritarashtra,SON_OF,2,no,parse error: "Dhritarashtra's son" refers to Duryodhana not Arjuna
+Pandavas,Kunti,SON_OF,2,yes,as a group
+Karna,Radha,SON_OF,2,yes,adoptive mother
+Shikhandhi,Drupada,SON_OF,2,yes,
+Srutakirti,Arjuna,SON_OF,2,yes,
+Duryodhana,Drona,SON_OF,2,no,parse error: "Bharadvaja's son" is Drona — Duryodhana is not Drona's son
+Lakshman,Duryodhana,SON_OF,2,yes,
+Bhima,Karna,KILLED,2,no,text says "defeated" not "killed" — Arjuna killed Karna
+Satyaki,Bhurishravas,KILLED,2,yes,
+Samba,Jambavati,SON_OF,2,yes,
+Maharaja Shantanu,Pratipa,SON_OF,1,yes,
+Chaitanya Mahaprabhu,Prakashananda Saraswati,KILLED,1,no,not Mahabharata — commentary about a different tradition
+Parashurama,Kartavirya Arjuna,KILLED,1,yes,pre-Mahabharata backstory
+Gandhari,Gandhara King,DAUGHTER_OF,1,yes,
+Kunti,King Surasena,DAUGHTER_OF,1,yes,
+Madri,King,DAUGHTER_OF,1,no,target too vague — "King" is not a name
+Gandhari,King Subala,DAUGHTER_OF,1,yes,
+Shakuni,Subala,SON_OF,1,yes,
+Madri,Shalya,SIBLING_OF,1,yes,
+Madri,Madras King,DAUGHTER_OF,1,yes,
+Sahadeva,Dhritarashtra,SON_OF,1,no,parse error: list "Sahadeva and Dhritarashtra's sons"
+Karna,Kunti,SON_OF,1,yes,biological mother
+This Pandava,Kunti,SON_OF,1,no,parse error: "This Pandava" is not a name
+Karna,Adhiratha,SON_OF,1,yes,adoptive father
+Balarama,Personality,SIBLING_OF,1,no,parse error: "brother of the Personality of Godhead"
+Yudhishthira,Kunti,SON_OF,1,yes,
+Queen Kunti,Pandu,MARRIED_TO,1,yes,
+Pandu,King Surasena,DAUGHTER_OF,1,no,parse error: Kunti is daughter of Surasena not Pandu
+Yudhishthira,Yamaraja,SON_OF,1,yes,divine father
+Pandavas,King Drupada,KILLED,1,no,Pandavas defeated Drupada not killed him
+Vyasa,Satyavati,SON_OF,1,yes,
+Dhaumya,Devala,SIBLING_OF,1,yes,
+Shakuni,Gandhara King,SON_OF,1,yes,
+Shishupala,Damaghosa,SON_OF,1,yes,
+Satya,King Nagnajit,DAUGHTER_OF,1,yes,
+Kunti,Madri,SON_OF,1,no,parse error: "sons of Kunti and sons of Madri" means their children
+King Dhritarastra,Shantanu,SON_OF,1,no,parse error: "Shantanu's son Bhishma" — Dhritarashtra is not Shantanu's son
+Ulupi,King,DAUGHTER_OF,1,yes,daughter of Naga king
+Subhadra,Krishna,SIBLING_OF,1,yes,
+Lord Ramachandra,King Dasaratha,SON_OF,1,no,not Mahabharata — Ramayana reference
+Harischandra,Trishanku,SON_OF,1,yes,but minor mythological reference
+Maharaja Yudhisthira,Aunt Kunti,SON_OF,1,no,parse error: malformed name
+Godhead,Devaki,SON_OF,1,no,parse error: should be Krishna son of Devaki
+Bhima,Wind God,SON_OF,1,yes,divine father Vayu
+Sahadeva,King Jarasandha,SON_OF,1,yes,this is a different Sahadeva — son of Jarasandha not the Pandava
+Sahadeva,Jarasandha,SON_OF,1,yes,same as above — different Sahadeva
+Bhima,Rochamana,KILLED,1,no,text says "defeated" not "killed"
+Janaka,Jarasandha,SON_OF,1,no,parse error: Janaka is not son of Jarasandha
+Vibhishana,Ravana,SIBLING_OF,1,yes,Ramayana reference but correct fact
+Nakula,Pandu,SON_OF,1,yes,
+Bhishma,Ganga,SON_OF,1,yes,
+Krishna,Shishupala,KILLED,1,yes,
+Bhurishravas,Dhritarashtra,SON_OF,1,no,parse error: list separation
+Dhritarashtra,Krishna Dvaipayana Vyasa,SON_OF,1,yes,biological father via niyoga
+Bhima,Kirmira,KILLED,1,yes,
+Bhima,Rakshasa Kirmira,KILLED,1,yes,duplicate of above
+King Yudhisthira,Pandu,SON_OF,1,yes,
+Parasurama,Jamadagni,SON_OF,1,yes,
+Pradyumna,Rukmini,SON_OF,1,yes,
+Indra,Vritrasura,KILLED,1,yes,mythological but correct
+Sachi,Indra,MARRIED_TO,1,yes,
+Dhritarashtra,Vyasa,SON_OF,1,yes,same as Krishna Dvaipayana entry
+Krishna,Madri,SON_OF,1,no,parse error: "Krishna Arjuna... the sons of Madri" is a list
+Return,Kunti,SON_OF,1,no,parse error: "Return" is not a name
+Gandhamadana,Pandu,SON_OF,1,no,parse error: Gandhamadana is a mountain
+Vikarna,Dhritarashtra,SON_OF,1,yes,
+Arjuna,Madri,SON_OF,1,no,parse error: "Arjuna and the sons of Madri" is a list
+Sudeshna,King,MARRIED_TO,1,yes,wife of King Virata
+Satyabhama,Draupadi,MARRIED_TO,1,no,parse error: Draupadi served Satyabhama as a maid
+Uttara,King,SON_OF,1,yes,son of King Virata
+Arjuna,Nivatakavachas,KILLED,1,yes,
+Sangramajit,Karna,SIBLING_OF,1,yes,
+Virata,Trigartas,KILLED,1,no,Virata defeated the Trigartas — not killed
+Kritavarman,Kritavarman,SON_OF,1,no,parse error: self-referencing "son of Hridika"
+Nakula,Draupadi,SON_OF,1,no,parse error: list "Nakula Sahadeva... Draupadi's five sons"
+Lord Balarama,Lord Krishna,SIBLING_OF,1,yes,
+Drona,Rukmi,MENTOR_OF,1,yes,
+Uluka,Shakuni,SON_OF,1,yes,
+Bhurisravas,Somadatta,SON_OF,1,yes,
+Vrishasena,Karna,SON_OF,1,yes,
+Karna,Surya,SON_OF,1,yes,divine father
+King,Pandu,SON_OF,1,no,parse error: "King" is not a name
+Chedis,Shishupala,SON_OF,1,no,parse error: Chedis is a kingdom not a person
+Amba,King,DAUGHTER_OF,1,yes,daughter of King of Kashi
+Vyasadeva,Satyavati,SON_OF,1,yes,duplicate of Vyasa entry
+Uttamauja,Subhadra,SON_OF,1,no,parse error: "the son of Subhadra and the sons of Draupadi" — Uttamauja is separate
+Vikarna,Somadatta,SON_OF,1,no,parse error: "Vikarna and the son of Somadatta" is a list
+King Yudhisthira,Kunti,SON_OF,1,yes,
+You?o,Kunti,SON_OF,1,no,parse error: malformed
+Supreme,Pandu,SON_OF,1,no,parse error: "O son of Pandu" is addressing Arjuna
+Arjuna,Prtha,SON_OF,1,yes,Prtha is Kunti — duplicate
+Fight,Kunti,SON_OF,1,no,parse error: "Fight O son of Kunti"
+Bhishma,Sweta,KILLED,1,yes,
+Drona,Drupada,SON_OF,1,no,parse error: "Drona and the son of Drupada" is a list
+Bhima,Srutayush,KILLED,1,yes,
+King Yudhisthira,Draupadi,SON_OF,1,no,parse error: "Yudhisthira... the five sons of Draupadi" is a list
+Draupadi,Arjuna,SON_OF,1,no,parse error: "sons of Draupadi and the son of Arjuna Iravan"
+Drona,Dhritarashtra,SON_OF,1,no,parse error: "slay Drona and the sons of Dhritarashtra"
+Chitrasena,Sala,SON_OF,1,no,parse error: "Chitrasena and the son of Sala"
+Abhimanyu,Subhadra,SON_OF,1,yes,
+Lakshmana,Duryodhana,SON_OF,1,yes,duplicate of 2-attestation entry
+Subhadra,Draupadi,SON_OF,1,no,parse error: "son of Subhadra the sons of Draupadi" is a list
+Sutasoma,Bhima,SON_OF,1,yes,
+Countering,Bhima,SON_OF,1,no,parse error: "Countering" is not a name
+Bhima,Vahvasin,KILLED,1,yes,
+Arjuna,Draupadi,SON_OF,1,no,parse error: "Arjuna the sons of Draupadi" is a list
+Bhima,Draupadi,SON_OF,1,no,parse error: same list issue
+Arjuna,Indra,KILLED,1,no,Arjuna defeated Indra not killed him — and Indra is his divine father
+King Yudhisthira,Madri,SON_OF,1,no,parse error: "the twin sons of Madri" refers to Nakula/Sahadeva
+Abhimanyu,Kripa,KILLED,1,no,text says "defeated" not killed — Kripa survived the war
+Satanika,Virata,SIBLING_OF,1,yes,
+Bhishma,Satanika,KILLED,1,yes,
+Pandavas,Drupada,SON_OF,1,no,parse error: "Pandavas or Drupada's son"
+Jayadratha,Arjuna,SON_OF,1,no,parse error: "Jayadratha and the son of Arjuna"
+Krishna,Kamsa,KILLED,1,yes,
+Drona,Vrika,KILLED,1,yes,
+Bhagadatta,Dasarna King,KILLED,1,yes,
+Lord Shiva,Jamadagni,SON_OF,1,no,parse error: Parashurama is son of Jamadagni not Shiva
+Lord Shiva,Kunti,SON_OF,1,no,parse error: badly parsed sentence
+Abhimanyu,Shakuni,KILLED,1,no,text says "defeated" — Shakuni survived until Day 18
+Kauravas,Abhimanyu,KILLED,1,yes,as a group
+Srutayudha,Varuna,SON_OF,1,yes,
+Durmuka,Dhritarashtra,SON_OF,1,yes,
+Sahadeva,Niramitra,KILLED,1,yes,
+Pandavas,Draupadi,SON_OF,1,no,parse error: "Pandavas the sons of Draupadi" is a list
+Dhristaketu,Shisupala,SON_OF,1,yes,
+Lord Krishna,Shisupala,KILLED,1,yes,
+Drona,Jarasandha,SON_OF,1,no,parse error: "Drona the son of Jarasandha Sahadeva"
+Bhurishravas,Satyaki,KILLED,1,no,reversed — Satyaki killed Bhurishravas
+Satyaki,Drona,KILLED,1,no,defeated not killed — Drona was killed by Dhrishtadyumna
+Satyaki,Ashvatthama,KILLED,1,no,defeated not killed — Ashwatthama survived the war
+Satyaki,Jalasandha,KILLED,1,yes,
+Bahlika,Pratipa,SON_OF,1,yes,
+Bhima,Vikata,KILLED,1,yes,
+Bhima,Krata,KILLED,1,yes,
+Arjuna,Radha,SON_OF,1,no,parse error: "son of Kunti Arjuna and the son of Radha Karna"
+Arjuna,Surya,SON_OF,1,no,parse error: "son of Indra Arjuna and the son of Surya Karna"
+Chitrasena,Karna,SIBLING_OF,1,yes,
+Behold,Pandu,SON_OF,1,no,parse error: "Behold O son of Pandu"
+Deceitful shakuni,Yudhishthira,KILLED,1,no,parse error
+Susena,Karna,SON_OF,1,yes,
+Lord,Hiranyakashipu,KILLED,1,no,not Mahabharata — Narasimha avatar story
+Kshatriya code,Drona,SON_OF,1,no,parse error: "the son of Drona" refers to Ashwatthama
+Bhima,King,KILLED,1,no,target too vague
+Satanika,Nakula,SON_OF,1,yes,
+Prishnigarbha,Prishni,SON_OF,1,no,not Mahabharata characters
+King Yudhisthira,Demigod,SON_OF,1,no,target too vague
+Arjuna,Bhagadatta,SON_OF,1,no,parse error: "Arjuna and the son of Bhagadatta"
+Maharaja Yudhisthira,Kauravas,MARRIED_TO,1,no,parse error
+Lord Krishna,Krishna,SON_OF,1,no,parse error: self-reference
+Satyabhama,Satrajit,SON_OF,1,yes,should be DAUGHTER_OF but relationship is correct
+Lord Baladeva,Rohini,SON_OF,1,yes,
+Vajra,Aniruddha,SON_OF,1,yes,

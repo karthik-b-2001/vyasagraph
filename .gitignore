@@ -7,13 +7,10 @@ venv/
 dist/
 build/
 data/chromadb/
-data/*.txt
-data/*.json
-data/*.csv
-data/*.parquet
 .mypy_cache/
 .pytest_cache/
 .ruff_cache/
 node_modules/
 frontend/dist/
 .DS_Store
+.logs/
