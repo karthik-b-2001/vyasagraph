@@ -1,0 +1,11 @@
+id: ganguli
+title: The Mahabharata, translated by Kisari Mohan Ganguli (1883-1896)
+# Complete English prose translation of all 18 parvas. Public domain.
+# Project Gutenberg eBooks #15474-#15477, unmodified.
+kind: translation
+parser: ganguli
+file:
+  - volume1.txt
+  - volume2.txt
+  - volume3.txt
+  - volume4.txt

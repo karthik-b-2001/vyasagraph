@@ -16,10 +16,20 @@ start() {
     echo "Starting VyasaGraph..."
     echo ""
 
+    INDEX_DIR="${INDEX_DIR:-$PROJECT_DIR/data/index}"
+    if [ ! -f "$INDEX_DIR/chunks.jsonl" ]; then
+        echo "  No vector index found. Build the data first:"
+        echo "    docker compose up neo4j -d --wait && python -m src.ingest"
+        exit 1
+    fi
+
     # 1. Neo4j
     echo "  [1/4] Neo4j..."
-    docker compose up neo4j -d 2>/dev/null
-    sleep 3
+    cd "$PROJECT_DIR"
+    if ! docker compose up neo4j -d --wait; then
+        echo "        Neo4j failed to start (is Docker running?)"
+        exit 1
+    fi
     echo "        http://localhost:7474"
 
     # 2. Ollama
@@ -35,11 +45,24 @@ start() {
     # 3. FastAPI backend
     echo "  [3/4] FastAPI backend..."
     cd "$PROJECT_DIR"
+    if curl -s -o /dev/null http://localhost:8000; then
+        echo "        port 8000 is already in use; run ./run.sh stop first"
+        exit 1
+    fi
     source venv/bin/activate 2>/dev/null || true
     python3 -m uvicorn src.api:app --port 8000 > "$LOG_DIR/backend.log" 2>&1 &
     echo $! > "$LOG_DIR/backend.pid"
-    sleep 3
-    echo "        http://localhost:8000"
+    # Loading the embedding model takes a few seconds; wait until it answers.
+    for _ in $(seq 1 60); do
+        curl -sf http://localhost:8000/api/health > /dev/null && break
+        sleep 1
+    done
+    if curl -sf http://localhost:8000/api/health > /dev/null; then
+        echo "        http://localhost:8000"
+    else
+        echo "        failed to start, see $LOG_DIR/backend.log"
+        exit 1
+    fi
 
     # 4. Frontend
     echo "  [4/4] Frontend..."
@@ -76,13 +99,12 @@ stop() {
     # Also kill any uvicorn processes for this project
     pkill -f "uvicorn src.api:app" 2>/dev/null
 
-    # Ollama
+    # Ollama (only if this script started it)
     if [ -f "$LOG_DIR/ollama.pid" ]; then
         kill $(cat "$LOG_DIR/ollama.pid") 2>/dev/null
         rm "$LOG_DIR/ollama.pid"
         echo "  Ollama stopped"
     fi
-    pkill -x ollama 2>/dev/null
 
     # Neo4j
     cd "$PROJECT_DIR"
@@ -99,7 +121,8 @@ status() {
     echo ""
 
     # Neo4j
-    if docker compose ps 2>/dev/null | grep -q "neo4j.*running"; then
+    cd "$PROJECT_DIR"
+    if docker compose ps --status running --services 2>/dev/null | grep -qx neo4j; then
         echo "  Neo4j:    running (http://localhost:7474)"
     else
         echo "  Neo4j:    stopped"

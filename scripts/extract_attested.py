@@ -9,22 +9,29 @@ Three extraction layers:
 2. SVO kill extraction: subject-verb-object where verb is kill/slay
 3. Attestation scoring: relationships ranked by independent evidence
 
-Output: data/extracted_relationships.csv for human review
+Reads the narrative sections of one text source (commentary is skipped)
+through the same parser the ingestion pipeline uses.
+
+Output: data/graph/extracted_<source>.csv for human review. Approved rows
+go into data/graph/reviewed_relationships.csv, then
+`python -m src.ingest graph` rebuilds the graph.
 
 Usage:
-    python scripts/extract_attested.py
+    python scripts/extract_attested.py [source_id]    # default: summary_study
 """
 
 import csv
 import re
-import spacy
+import sys
 from collections import defaultdict
 from pathlib import Path
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data"
-TEXT_PATH = DATA_DIR / "1-18_books_combined.txt"
-OUTPUT_CSV = DATA_DIR / "extracted_relationships.csv"
-OUTPUT_JSON = DATA_DIR / "ground_truth.json"
+import spacy
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from src import config  # noqa: E402
+from src.ingest.parsers import PARSERS  # noqa: E402
+from src.ingest.text import load_sources  # noqa: E402
 
 # ── Alias resolution ──────────────────────────────────────────────────────
 # Map known aliases/epithets to canonical names.
@@ -86,58 +93,23 @@ def canonicalize(name):
     # Capitalize first letter if not already mapped.
     return clean if clean[0].isupper() else clean.capitalize()
 
-# ── Parsing (reused) ─────────────────────────────────────────────────────
+# ── Parsing (shared with the ingestion pipeline) ──────────────────────────
 
-PARVA_NAMES = {
-    "Adi Parva":"Adi Parva","Sabha Parva":"Sabha Parva","Vana Parva":"Vana Parva",
-    "Virata Parva":"Virata Parva","Udyoga Parva":"Udyoga Parva",
-    "Bhisma Parva":"Bhishma Parva","Drona Parva":"Drona Parva",
-    "Karna Parva":"Karna Parva","Salya Parva":"Shalya Parva",
-    "Sauptika Parva":"Sauptika Parva","Stree Parva":"Stri Parva",
-    "Shanti Parva":"Shanti Parva","Anushasana Parva":"Anushasana Parva",
-    "Ashvamedha Parva":"Ashvamedhika Parva","Ashramvasika Parva":"Ashramavasika Parva",
-    "Mausala Parva":"Mausala Parva","Mahaprasthanika Parva":"Mahaprasthanika Parva",
-}
-_NW = (r"one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|"
-       r"thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|"
-       r"twenty|twenty[\s-]?one|twenty[\s-]?two|twenty[\s-]?three|"
-       r"twenty[\s-]?four|twenty[\s-]?five|twenty[\s-]?six|twenty[\s-]?seven|"
-       r"twenty[\s-]?eight|twenty[\s-]?nine|thirty|thirty[\s-]?one|"
-       r"thirty[\s-]?two|thirty[\s-]?three|thirty[\s-]?four|thirty[\s-]?five|\d+")
-CHAPTER_RE = re.compile(rf"^Chapter\s+(?:{_NW})\s*$", re.IGNORECASE | re.MULTILINE)
-THUS_ENDS_RE = re.compile(r"^Thus Ends.*$", re.IGNORECASE | re.MULTILINE)
-COMMENTARY_RE = re.compile(r"^Chapter\s+Commentary\s*$", re.IGNORECASE | re.MULTILINE)
-
-def clean_text(raw):
-    text = raw.replace("\r\n","\n").replace("\r","\n")
-    text = re.sub(r"[ \t]+"," ",text)
-    text = re.sub(r"\n{3,}","\n\n",text)
-    return text.strip()
-
-def parse_sentences_by_parva():
-    """Parse text and return list of (sentence, parva) tuples."""
-    raw = TEXT_PATH.read_text(encoding="utf-8", errors="replace")
-    cleaned = clean_text(raw)
-    parva_pattern = re.compile(
-        r"^(" + "|".join(re.escape(n) for n in PARVA_NAMES) + r")\s*$",
-        re.MULTILINE,
-    )
-    parts = parva_pattern.split(cleaned)
-    all_sentences = []
-    for i in range(1, len(parts), 2):
-        header = parts[i].strip()
-        body = parts[i + 1] if i + 1 < len(parts) else ""
-        canonical = PARVA_NAMES.get(header, header)
-        # Remove chapter headers, commentary markers, "Thus Ends" lines.
-        body = CHAPTER_RE.sub("", body)
-        body = COMMENTARY_RE.sub("", body)
-        body = THUS_ENDS_RE.sub("", body)
-        # Split into sentences.
-        for sent in re.split(r"(?<=[.!?])\s+", body):
+def parse_sentences_by_parva(source_id):
+    """Return (sentence, parva) pairs from a source's narrative sections."""
+    sources = {s.id: s for s in load_sources()}
+    if source_id not in sources:
+        raise SystemExit(f"unknown source '{source_id}', expected one of {sorted(sources)}")
+    source = sources[source_id]
+    pairs = []
+    for sec in PARSERS[source.parser](source.read()):
+        if sec.kind != "narrative":
+            continue
+        for sent in re.split(r"(?<=[.!?])\s+", sec.text):
             sent = sent.strip()
             if len(sent) > 20:  # skip very short fragments
-                all_sentences.append((sent, canonical))
-    return all_sentences
+                pairs.append((sent, sec.parva))
+    return pairs
 
 # ── Layer 1: Epithet mining via dependency parsing ────────────────────────
 
@@ -417,57 +389,6 @@ def write_csv(scored, path):
                 "",  # empty "approved" column for human review
             ])
 
-def build_ground_truth_json(scored, min_attestations=2):
-    """Build ground_truth.json from scored relationships above threshold."""
-    import json
-    
-    characters = set()
-    locations = set()
-    weapons = set()
-    clans = set()
-    events = set()
-    
-    rels_by_type = defaultdict(list)
-    
-    for r in scored:
-        if r["count"] < min_attestations:
-            continue
-        
-        src, tgt, rel_type = r["source"], r["target"], r["type"]
-        characters.add(src)
-        characters.add(tgt)
-        
-        rels_by_type[rel_type].append({
-            "source": src,
-            "target": tgt,
-            "verified": False,
-            "attestations": r["count"],
-            "parvas": r["parvas"],
-            "evidence": r["sample_sentences"][:2],
-        })
-    
-    mk = lambda names: [{"name": n, "aliases": [], "description": ""} for n in sorted(names)]
-    
-    gt = {
-        "_meta": {
-            "description": "Attestation-extracted relationships from Mahabharata text",
-            "method": "spaCy dependency parsing with attestation scoring",
-            "min_attestations": min_attestations,
-            "total_relationships": sum(len(v) for v in rels_by_type.values()),
-        },
-        "entities": {
-            "characters": mk(characters),
-            "locations": mk(locations),
-            "weapons": mk(weapons),
-            "clans": mk(clans),
-            "events": mk(events),
-        },
-        "relationships": dict(rels_by_type),
-    }
-    
-    with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
-        json.dump(gt, f, indent=2, ensure_ascii=False)
-
 # ── Main ──────────────────────────────────────────────────────────────────
 
 def main():
@@ -476,9 +397,11 @@ def main():
     print("=" * 70)
     
     # Step 1: Parse text into sentences.
-    print("\n  Parsing text into sentences...")
-    sentence_parva_pairs = parse_sentences_by_parva()
-    print(f"  {len(sentence_parva_pairs)} sentences across {len(PARVA_NAMES)} parvas")
+    source_id = sys.argv[1] if len(sys.argv) > 1 else "summary_study"
+    output_csv = config.GRAPH_DIR / f"extracted_{source_id}.csv"
+    print(f"\n  Parsing {source_id} into sentences...")
+    sentence_parva_pairs = parse_sentences_by_parva(source_id)
+    print(f"  {len(sentence_parva_pairs)} sentences across {len({p for _, p in sentence_parva_pairs})} parvas")
     
     # Step 2: Load spaCy.
     print("\n  Loading spaCy model...")
@@ -567,14 +490,8 @@ def main():
     print("WRITING OUTPUTS")
     print("=" * 70)
     
-    write_csv(scored, OUTPUT_CSV)
-    print(f"\n  CSV (all relationships): {OUTPUT_CSV}")
-    
-    # Build ground truth with 2+ attestation threshold.
-    min_att = 2
-    build_ground_truth_json(scored, min_attestations=min_att)
-    above_threshold = len([r for r in scored if r["count"] >= min_att])
-    print(f"  JSON (>={min_att} attestations): {OUTPUT_JSON} ({above_threshold} relationships)")
+    write_csv(scored, output_csv)
+    print(f"\n  CSV (all relationships): {output_csv}")
     
     # Summary.
     print("\n" + "=" * 70)
@@ -589,9 +506,10 @@ def main():
     print(f"  1 attestation:         {len([r for r in scored if r['count'] == 1])}")
     print()
     print("  NEXT STEPS:")
-    print(f"  1. Open {OUTPUT_CSV} in a spreadsheet")
-    print(f"  2. Review relationships, mark 'approved' column as 'yes' or 'no'")
-    print(f"  3. Run: python scripts/load_graph.py")
+    print(f"  1. Open {output_csv} in a spreadsheet")
+    print("  2. Copy the rows you approve into data/graph/reviewed_relationships.csv")
+    print("     (columns: source,target,type,attestations,approved,reason)")
+    print("  3. Run: python -m src.ingest graph")
     print()
 
 if __name__ == "__main__":

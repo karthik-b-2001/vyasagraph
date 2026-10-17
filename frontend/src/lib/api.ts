@@ -1,99 +1,91 @@
-const BASE = "/api";
+const BASE = `${import.meta.env.VITE_API_URL ?? ""}/api`;
 
-export interface ChatMeta {
-  type: "meta";
-  entities: string[];
-  graph_edges: { source: string; target: string; type: string }[];
-  sources: { parva: string; chapter: number; chapter_title: string; score: number; text: string }[];
-}
-
-export interface GraphCharacter {
-  name: string;
-  relationships: {
-    source: string;
-    type: string;
-    target: string;
-    direction: string;
-    origins: string;
-  }[];
-}
-
-export interface SearchResult {
+export interface Source {
   text: string;
+  score: number;
+  source: string;
+  source_title: string;
+  section: "narrative" | "commentary";
   parva: string;
   chapter: number;
   chapter_title: string;
-  score: number;
+  citation: string;
 }
 
-export interface GraphStats {
-  nodes: Record<string, number>;
-  relationships: Record<string, number>;
-  top_characters: { name: string; connections: number }[];
+export interface ChatMeta {
+  type: "meta";
+  on_topic: boolean;
+  entities: string[];
+  graph_edges: { source: string; target: string; type: string; origins: string }[];
+  sources: Source[];
 }
 
-export async function streamChat(
-  message: string,
-  onMeta: (meta: ChatMeta) => void,
-  onToken: (token: string) => void,
-  onDone: () => void
-) {
-  const res = await fetch(`${BASE}/chat`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ message }),
-  });
+export interface Health {
+  status: string;
+  neo4j: boolean;
+  chunks: number;
+  characters: number;
+  relationships: number;
+}
 
-  const reader = res.body?.getReader();
-  if (!reader) return;
+export interface StreamHandlers {
+  onMeta: (meta: ChatMeta) => void;
+  onToken: (token: string) => void;
+  onError: (message: string) => void;
+  onDone: () => void;
+}
 
-  const decoder = new TextDecoder();
-  let buffer = "";
-
-  while (true) {
-    const { done, value } = await reader.read();
-    if (done) break;
-
-    buffer += decoder.decode(value, { stream: true });
-    const lines = buffer.split("\n");
-    buffer = lines.pop() || "";
-
-    for (const line of lines) {
-      if (!line.startsWith("data: ")) continue;
-      const json = line.slice(6);
-      try {
-        const data = JSON.parse(json);
-        if (data.type === "meta") onMeta(data);
-        else if (data.type === "token") onToken(data.content);
-        else if (data.type === "done") onDone();
-      } catch {}
+/** POST a question and dispatch the server's SSE events. Always ends with onDone. */
+export async function streamChat(message: string, h: StreamHandlers) {
+  let finished = false;
+  try {
+    const res = await fetch(`${BASE}/chat`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message }),
+    });
+    if (!res.ok || !res.body) {
+      h.onError(res.status === 422 ? "That question is too long." : `Server error (${res.status}).`);
+      return;
     }
+
+    const reader = res.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = "";
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      buffer += decoder.decode(value, { stream: true });
+      const lines = buffer.split("\n");
+      buffer = lines.pop() || "";
+
+      for (const line of lines) {
+        if (!line.startsWith("data: ")) continue;
+        let data;
+        try {
+          data = JSON.parse(line.slice(6));
+        } catch {
+          continue;
+        }
+        if (data.type === "meta") h.onMeta(data);
+        else if (data.type === "token") h.onToken(data.content);
+        else if (data.type === "error") {
+          h.onError(data.message);
+          finished = true;
+        } else if (data.type === "done") finished = true;
+      }
+    }
+    if (!finished) h.onError("The connection closed before the answer finished.");
+  } catch {
+    h.onError("Could not reach the server.");
+  } finally {
+    h.onDone();
   }
 }
 
-export async function searchText(query: string, topK = 5): Promise<SearchResult[]> {
-  const res = await fetch(`${BASE}/search`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ query, top_k: topK }),
-  });
-  const data = await res.json();
-  return data.results;
-}
-
-export async function getCharacter(name: string): Promise<GraphCharacter> {
-  const res = await fetch(`${BASE}/graph/character/${encodeURIComponent(name)}`);
-  if (!res.ok) throw new Error(`Character not found: ${name}`);
+export async function getHealth(): Promise<Health> {
+  const res = await fetch(`${BASE}/health`);
+  if (!res.ok) throw new Error(`health ${res.status}`);
   return res.json();
-}
-
-export async function getGraphStats(): Promise<GraphStats> {
-  const res = await fetch(`${BASE}/graph/stats`);
-  return res.json();
-}
-
-export async function getEntities(): Promise<string[]> {
-  const res = await fetch(`${BASE}/entities`);
-  const data = await res.json();
-  return data.entities;
 }

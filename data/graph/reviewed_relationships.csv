@@ -121,7 +121,7 @@ Draupadi,Arjuna,SON_OF,1,no,parse error: "sons of Draupadi and the son of Arjuna
 Drona,Dhritarashtra,SON_OF,1,no,parse error: "slay Drona and the sons of Dhritarashtra"
 Chitrasena,Sala,SON_OF,1,no,parse error: "Chitrasena and the son of Sala"
 Abhimanyu,Subhadra,SON_OF,1,yes,
-Lakshmana,Duryodhana,SON_OF,1,yes,duplicate of 2-attestation entry
+Lakshman,Duryodhana,SON_OF,1,yes,duplicate of 2-attestation entry
 Subhadra,Draupadi,SON_OF,1,no,parse error: "son of Subhadra the sons of Draupadi" is a list
 Sutasoma,Bhima,SON_OF,1,yes,
 Countering,Bhima,SON_OF,1,no,parse error: "Countering" is not a name

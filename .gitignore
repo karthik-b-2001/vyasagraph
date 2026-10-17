@@ -6,6 +6,7 @@ venv/
 *.egg-info/
 dist/
 build/
+data/index/
 data/chromadb/
 .mypy_cache/
 .pytest_cache/

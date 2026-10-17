@@ -1,0 +1,7 @@
+id: summary_study
+title: Summary Study of the Mahabharata
+# A prose retelling of the epic with per-chapter commentary, written in the
+# New Vrindavana community (per its closing colophon). Not a translation.
+kind: summary
+parser: summary_study
+file: text.txt
