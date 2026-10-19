@@ -1,4 +1,4 @@
-const BASE = `${import.meta.env.VITE_API_URL ?? ""}/api`;
+const BASE = `${(import.meta.env.VITE_API_URL ?? "").replace(/\/+$/, "")}/api`;
 
 export interface Source {
   text: string;

@@ -1,0 +1,14 @@
+# Uploaded to Cloud Build by `gcloud run deploy --source .`.
+# Only what the Dockerfile needs: src/, data/index/, requirements.txt.
+# (This file replaces .gitignore for gcloud, so data/index/ is included.)
+*
+!Dockerfile
+!requirements.txt
+!src/
+!src/**
+!data/
+!data/index/
+!data/index/**
+src/**/__pycache__/
+data/sources/
+data/graph/

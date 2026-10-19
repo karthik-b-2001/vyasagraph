@@ -1,4 +1,5 @@
-"""Runtime configuration, read from environment variables.
+"""Runtime configuration, read from environment variables (and from a
+git-ignored .env file in the project root, if present).
 
 Defaults match the local docker-compose / Ollama setup, so nothing needs
 to be set for local development.
@@ -8,6 +9,23 @@ import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+
+
+def _load_dotenv(path):
+    """Read KEY=VALUE lines from .env (git-ignored) into the environment.
+    Variables already set in the environment win."""
+    if not path.exists():
+        return
+    for line in path.read_text().splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.removeprefix("export ").split("=", 1)
+        os.environ.setdefault(key.strip(), value.strip().strip("'\""))
+
+
+_load_dotenv(ROOT / ".env")
+
 DATA_DIR = ROOT / "data"
 SOURCES_DIR = DATA_DIR / "sources"
 GRAPH_DIR = DATA_DIR / "graph"
@@ -22,6 +40,9 @@ NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD", "vyasagraph")
 LLM_BASE_URL = os.getenv("LLM_BASE_URL", "http://localhost:11434/v1")
 LLM_API_KEY = os.getenv("LLM_API_KEY", "ollama")
 LLM_MODEL = os.getenv("LLM_MODEL", "llama3.1:8b")
+# Optional, for reasoning models (e.g. gpt-oss on Groq): low | medium | high.
+# Lower effort spends fewer tokens, which matters under a tokens-per-minute cap.
+LLM_REASONING_EFFORT = os.getenv("LLM_REASONING_EFFORT", "")
 
 # bge-small-en-v1.5 beat all-MiniLM-L6-v2 (same size) on scripts/eval_retrieval.py:
 # 80% vs 60% hit@5 within the Ganguli translation. Changing the model

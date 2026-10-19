@@ -11,7 +11,7 @@ import numpy as np
 
 from src import config
 
-REFUSAL = "I can only answer questions about the Mahabharata."
+REFUSAL = "Hey, this is a good question, but unfortunately I can only answer questions about the mahabharata, you can ask me any of the model questions you see."
 
 # Epithets a user may type instead of the canonical name. Names that are
 # also graph nodes (e.g. Vasudeva is Krishna's epithet and his father's
@@ -263,22 +263,36 @@ def build_messages(question, ctx):
     ]
 
 
+class LLMBusy(Exception):
+    """The provider is rate-limiting us (HTTP 429), e.g. a free tier's tokens per minute."""
+
+
+def _check(response):
+    if response.status_code == 429:
+        raise LLMBusy(response.headers.get("retry-after") or "")
+    response.raise_for_status()
+
+
 def _llm_request(messages, stream):
+    body = {"model": config.LLM_MODEL, "messages": messages, "stream": stream,
+            "temperature": 0.2, "max_tokens": 600}
+    if config.LLM_REASONING_EFFORT:  # reasoning models only, e.g. gpt-oss: low | medium | high
+        body["reasoning_effort"] = config.LLM_REASONING_EFFORT
     return {
         "url": f"{config.LLM_BASE_URL.rstrip('/')}/chat/completions",
         "headers": {"Authorization": f"Bearer {config.LLM_API_KEY}"},
-        "json": {"model": config.LLM_MODEL, "messages": messages, "stream": stream,
-                 "temperature": 0.2, "max_tokens": 600},
+        "json": body,
     }
 
 
 async def stream_answer(messages):
-    """Yield answer tokens. Raises httpx.HTTPError if the LLM is unreachable or errors."""
+    """Yield answer tokens. Raises LLMBusy when rate-limited, httpx.HTTPError if
+    the LLM is unreachable or errors."""
     async with httpx.AsyncClient(timeout=httpx.Timeout(120, connect=5)) as client:
         async with client.stream("POST", **_llm_request(messages, stream=True)) as response:
             if response.status_code != 200:
                 await response.aread()
-                response.raise_for_status()
+                _check(response)
             async for line in response.aiter_lines():
                 if not line.startswith("data: "):
                     continue
@@ -294,8 +308,9 @@ async def stream_answer(messages):
 async def answer(messages):
     async with httpx.AsyncClient(timeout=httpx.Timeout(120, connect=5)) as client:
         response = await client.post(**_llm_request(messages, stream=False))
-        response.raise_for_status()
+        _check(response)
         choices = response.json().get("choices") or []
-        if not choices:
-            raise ValueError("LLM response has no choices")
-        return choices[0]["message"]["content"]
+        content = choices[0]["message"].get("content") if choices else None
+        if not content:
+            raise ValueError("LLM returned no answer text")
+        return content

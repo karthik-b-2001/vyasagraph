@@ -1,0 +1,7 @@
+# Build context for `docker build`: only what the Dockerfile copies.
+*
+!Dockerfile
+!requirements.txt
+!src
+!data/index
+**/__pycache__

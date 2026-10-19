@@ -66,6 +66,10 @@ def _meta(ctx):
     }
 
 
+BUSY = "Too many questions right now (the free LLM tier is rate-limited). Please try again in a minute."
+UNAVAILABLE = "The language model is unavailable. Please try again shortly."
+
+
 def _sse(data):
     return f"data: {json.dumps(data)}\n\n"
 
@@ -86,12 +90,22 @@ async def chat(req: ChatRequest):
             yield _sse({"type": "done"})
             return
         yield _sse(_meta(ctx))
+        answered = False
         try:
             async for token in rag.stream_answer(rag.build_messages(req.message, ctx)):
+                answered = True
                 yield _sse({"type": "token", "content": token})
+        except rag.LLMBusy:
+            log.warning("LLM rate limit hit")
+            yield _sse({"type": "error", "message": BUSY})
+            return
         except (httpx.HTTPError, ValueError) as e:
             log.error("LLM request failed: %r", e)
-            yield _sse({"type": "error", "message": "The language model is unavailable. Please try again shortly."})
+            yield _sse({"type": "error", "message": UNAVAILABLE})
+            return
+        if not answered:
+            log.error("LLM stream ended without answer text")
+            yield _sse({"type": "error", "message": "The model returned an empty answer. Please ask again."})
             return
         yield _sse({"type": "done"})
 
@@ -108,6 +122,8 @@ async def chat_sync(req: ChatRequest):
         return {"answer": rag.REFUSAL, **meta, "entities": [], "graph_edges": [], "sources": []}
     try:
         answer = await rag.answer(rag.build_messages(req.message, ctx))
+    except rag.LLMBusy:
+        raise HTTPException(status_code=429, detail=BUSY)
     except (httpx.HTTPError, ValueError, KeyError, IndexError) as e:
         log.error("LLM request failed: %r", e)
         raise HTTPException(status_code=503, detail="The language model is unavailable.")
